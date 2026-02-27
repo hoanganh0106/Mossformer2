@@ -7,7 +7,7 @@ import os
 import sys
 
 # Đường dẫn mặc định
-input_file = sys.argv[1] if len(sys.argv) > 1 else "samples/1.wav"
+input_file = sys.argv[1] if len(sys.argv) > 1 else "samples/mix.wav"
 output_dir = sys.argv[2] if len(sys.argv) > 2 else "samples/output"
 
 os.makedirs(output_dir, exist_ok=True)

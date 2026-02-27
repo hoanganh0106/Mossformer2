@@ -5,7 +5,7 @@ Speech separation and enhancement using MossFormer2.
 ## Setup
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/hoanganh0106/Mossformer2.git
 cd ClearerVoice-Studio-main
 python -m venv .venv
 .venv\Scripts\activate
@@ -28,7 +28,17 @@ Original source: [ClearerVoice-Studio on GitHub](https://github.com/modelscope/C
 
 ## Usage
 
+###Tách giọng nói từ file audio có sẵn
+
 ```bash
-cd ClearerVoice-Studio-main
-python clearvoice/separate_3spk.py
+cd ClearerVoice-Studio-main/clearvoice
+# Dùng file mặc định (samples/mix.wav)
+python separate_3spk.py
+
+# Hoặc chỉ định file input và thư mục output
+python separate_3spk.py <input_file.wav> <output_dir>
+# Ví dụ:
+python separate_3spk.py samples/mix.wav samples/output
 ```
+
+Kết quả sẽ được lưu vào thư mục output dưới dạng các file `output_s1.wav`, `output_s2.wav`, `output_s3.wav` tương ứng với 3 nguồn âm được tách.
