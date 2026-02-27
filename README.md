@@ -16,7 +16,9 @@ pip install -r requirements.txt
 
 Model weights are not included in this repository due to file size.
 
-Download manually from the original release and place them at:
+Download the model from Google Drive: [model.ckpt-61-221600.pt](https://drive.google.com/file/d/1NfZyzGUQX7g8TMXvO0J6XCmBe098Eu1q/view?usp=sharing)
+
+After downloading, place the file at:
 
 ```
 ClearerVoice-Studio-main/clearvoice/checkpoints/MossFormer2_SS_16K/model.ckpt-61-221600.pt
