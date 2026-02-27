@@ -42,6 +42,7 @@ checkpoints/
 Output_Libri3Mix/
 samples/output/
 *.wav
+!mix.wav
 *.mp3
 *.flac
 *.ogg
